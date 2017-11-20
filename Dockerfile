@@ -5,7 +5,7 @@ RUN addgroup -S twemproxy \
     && adduser -S -G twemproxy twemproxy \
     && apk add --no-cache 'su-exec>=0.2'
 
-ENV TWEMPROXY_DOWNLOAD_URL=https://github.com/tarantool/twemproxy.git\
+ENV TWEMPROXY_DOWNLOAD_URL=https://github.com/twitter/twemproxy.git\
     TWEMPROXY_COMMIT=v0.4.1
 
 RUN set -x \
