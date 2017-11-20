@@ -6,7 +6,7 @@ RUN addgroup -S twemproxy \
     && apk add --no-cache 'su-exec>=0.2'
 
 ENV TWEMPROXY_DOWNLOAD_URL=https://github.com/tarantool/twemproxy.git\
-    TWEMPROXY_COMMIT=fe2c817
+    TWEMPROXY_COMMIT=v0.4.0
 
 RUN set -x \
     && apk add --no-cache --virtual .build-deps \
